@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="admin" >
+	<title>Share Your Recipes!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	
+	 <style>
+        {% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+        
+        
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/loggedin/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" class= "form-control" placeholder="Search Our Recipes" name="name" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li>
+						<a href="/loggedin/">Home</a>
+					</li>
+					<li class="current">
+						<a href="/share_recipes_loggedin/">Share Your Recipes</a>
+					</li>
+					<li>
+						<a href="/manage/">Manage Account</a>
+					</li>
+					
+					<li>
+						<a href="/profile/">Profile</a>
+					</li> 
+					
+					<li>
+						<a href="/logout_do/">Log Out</a>
+					</li>	
+				</ul>
+			</div>
+<div class="body">
+	<div id="content"> 
+	<div class="row centered-form">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3>SHARE YOUR RECIPE</h3>
+			 </div>
+			<div class="panel-body" >  
+		<form class="navbar-form navbar-center" action= "/share/" id="share">
+		<div class="col-lg-12">
+		
+
+<label for="recipe_name">RECIPE NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+    
+    <input id="recipe_name" name="name" type="text" placeholder="" class="form-control" required="">   
+    <br>
+<br>
+
+ <label for="short_des">SHORT DESCRIPTION</label>               
+    <textarea id="short_des" name="short_des" class="form-control"></textarea>
+
+<!--<label class="control-label" for="food_image">Image</label>
+  <div class="controls">
+    <div class="input-append">
+      <input id="food_image" name="food_image" placeholder="" type="text">
+      <span class="add-on">Browse</span>
+    </div>
+    
+  </div>-->
+
+<br><br>
+
+  <label for="ingredients">INGREDIENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <textarea id="ingredients" name="ingredients" class="form-control"></textarea>
+<br><br>
+<!-- Text input-->
+
+  <label for="calories">CALORIES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input id="calories" name="calories" type="text" placeholder="(Optional)" class="form-control">
+<br>
+<br>
+<!-- Text input-->
+
+  <label for="cost">APRROX. COST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input id="cost" name="cost" type="text" placeholder="(Optional)" class="form-control">
+<br><br>
+
+<!-- Textarea -->
+
+  <label for="steps">STEPS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <textarea id="steps" name="steps" class="form-control"></textarea>
+<br>
+<br>
+<!-- Multiple Radios (inline) -->
+
+  <label for="radios">FOOD TYPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="radio" name="radios" id="radios-0" value="Breakfast" checked="checked">
+      Breakfast
+    </label>
+    <label class="radio inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="Starter">
+      Starter
+    </label>
+    <label class="radio inline" for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="Lunch">
+      Lunch
+    </label>
+    <label class="radio inline" for="radios-3">
+      <input type="radio" name="radios" id="radios-3" value="Dinner">
+      Dinner
+    </label>
+    <label class="radio inline" for="radios-4">
+      <input type="radio" name="radios" id="radios-4" value="Desert">
+      Desert
+    </label>
+  </div>
+<br><br>
+<!-- Button -->
+    <center><button type="submit" id="/share/" name="/share/" class="btn btn-success">Share</button>
+
+</div>
+</div>
+<br>
+</form>
+	</div>
+	 
+
+
+</div>
+			              
+					</form>
+					</div>
+
+	<div class="footer">
+		<div>
+			<p>
+				&copy; Knorre. All rights reserved
+			</p>
+		</div>
+	</div>
+<script>
+{% include "bootstrap/js/validate.js" %}
+{% include "bootstrap/js/bootstrap.min.js" %}
+{% include "bootstrap/js/jquery.min1.js" %}
+</script>
+</body>
+</html>

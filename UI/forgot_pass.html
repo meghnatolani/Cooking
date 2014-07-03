@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Forgot your password</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--	<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+
+
+	 <style>
+        {% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+        
+        
+    </style>
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/index/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" class= "form-control" placeholder="Search Our Recipes" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li>
+						<a href="/index/">Home</a>
+					</li>
+					<li>
+						<a href="/featured/">Top Rated Recipes</a>
+					</li>
+					<li>
+						<a href="/share_recipes/">Share Your Recipes</a>
+					</li>
+					<li>
+						<a href="/contactus/">Contact Us</a>
+					</li>
+					
+					<li class="current">
+						<a href="/logindo/">Log In</a>
+					</li>	
+				</ul>
+			</div>
+			<div class="body">
+				<div id="content">
+					<div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title">Forgot Password</h3>
+			 			</div>
+	<div class="panel-body">
+		<form class="navbar-form navbar-left">
+			 
+			    <div class="col-xs-6">
+			    		
+			    		<div class="form-group">
+			                
+			                <input type="text" name="username" id="username" class="form-control" placeholder="User Name"><br><br>
+			    		<input type="email" name="email" id="email" class="form-control" placeholder="Email Address"><br><br>
+			    				
+			    			
+			    			<center>
+			    			<input type="submit" value="Send Email" class="btn btn-info">
+			    			<br>
+			    </div></div>
+			    		
+		
+    	</div>
+    </div>
+						</div>	
+		
+	</div>
+		<div class="footer" style="padding: 0px">
+		<div>
+			<p>
+				&copy; Copyright 2014. All rights reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Search Your Recipes</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	<style>
+	
+	{% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+	
+	div.blocktext {
+    margin-left: 70px;
+    }
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/index/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" name="name" class= "form-control" placeholder="Search Our Recipes" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn" name="result">
+		</form>
+	</div>
+	<br><br>
+
+
+<div class="blocktext">
+
+        {% if temp==1 %}
+		<h1>Search Results</h1><br>
+		<h3 class="lead"><strong class="text-danger"></strong> Results were found for the search for <strong class="text-danger">
+		
+		{% for i in range(0,temp1) %}
+		<u>{{result[i].name}}</strong></u></h3>		
+		<h4><u>Name </u> : {{result[i].name}} <br><br>
+		    <u>Short Description </u>  : {{result[i].short_des}} <br><br>
+		   <u>Calories</u>  : {{result[i].calories}}<br><br>
+		      <u>Steps</u>  : {{result[i].steps}}<br><br>
+		      <u>Cost</u> : {{result[i].cost}}<br><br>
+		      <u>Type</u> : {{result[i].type}}<br><br>
+		 {% endfor %}
+		    </h4>
+	
+	    
+		{% else %}
+		<h1>Search Results</h1><br>
+        <h3 class="lead"><strong class="text-danger"></strong> No Results found </strong></u></h3>                              
+        {% endif %}
+     
+        </div>
+<br><br>
+</div><br><br><br><br><br><br>
+
+<div class="footer">
+		<div>
+			<p>
+				&copy; Copyright 2014. All rights reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>

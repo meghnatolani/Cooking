@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login to Knorre</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+
+	  <style>
+        {% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+        {% include "bootstrap/css/checks.css" %}
+
+        
+        
+    </style>
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/index/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" class= "form-control" placeholder="Search Our Recipes" action="/search_do/" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+		</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li>
+						<a href="/index/">Home</a>
+					</li>
+					<li>
+						<a href="/featured/">Top Rated Recipes</a>
+					</li>
+					<li>
+						<a href="/share_recipes/">Share Your Recipes</a>
+					</li>
+					<li>
+						<a href="/contactus/">Contact Us</a>
+					</li>
+					
+					<li class="current">
+						<a href="/logindo/">Log In</a>
+					</li>	
+				</ul>
+			</div>
+<div class="body">
+<div id="content">
+<div class="container">
+        <div class="row centered-form">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title">ALREADY AT KNORRE?</h3>
+			 </div>
+	<div class="panel-body">
+			    <form class="navbar-form navbar-left" action= "/login_do/" id="logininform" method="POST">
+				  <div class="form-group">
+					<label for="username">USERNAME</label>
+			                <input type="text" name="username" id="username" class="form-control" placeholder="User Name" required><br><br>
+			                <label for="password">PASSWORD</label>
+			    		<input type="password" name="password" id="password" class="form-control" placeholder="Password" required><br><br>
+			    		<a href="/forgot_pass/"><font color="blue">Forgot Password?</font></a>
+			    			<br> <br>
+			    			<center>
+			    			<button type="submit" class="btn btn-info" id="login">Log In</button>
+						</center><br>
+				  </div>
+			     </form>
+	</div>
+</div>
+
+	
+	
+	   		
+			    		<br>
+			    		<center>
+			    		<h2> OR </h2>
+			    		<br>
+			    	
+<div class="panel panel-default">
+	<h3 class="panel-title">SIGN UP @ KNORRE</h3>		
+	<div class="panel-body">
+		
+			    		<form id="signupform" action= "/signup_do/" class="navbar-form navbar-left" role="form" >
+			    		<div class="form-group">
+			                <label for="username">USERNAME</label>
+			                <input type="text" name="username" id="username" class="form-control" placeholder="User Name" required><br><br>
+					<label for="email">EMAIL-ID &nbsp;&nbsp;&nbsp;</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="Email Address" ><br><br>
+					<label for="password">PASSWORD</label>
+					<input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+			    				
+			    			<br><br>
+			    			<center>
+			    			<div class="controls">
+			    			 <button type="submit" class="btn btn-info" id="signup" onclick = "window.location.replace('/loggedin/')">Sign Up</button>
+			    			 </div>
+					</div>
+					</form>
+	 </div>
+  </div>
+  
+  
+  
+  </div>
+ </div>
+    
+	<!--onclick="window.location.href='/signup/?username'"	-->				
+		
+		<div class="footer" style="padding: 0px">
+		
+			<p>
+				&copy; Copyright 2014. All rights reserved
+			</p>
+		
+	</div>
+	</div>
+	</div>
+<script>
+{% include "bootstrap/js/validate.js" %}
+{% include "bootstrap/js/bootstrap.min.js" %}
+{% include "bootstrap/js/jquery.min1.js" %}
+</script>
+	</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Your Profile</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	
+	  <style>
+        {% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+        {% include "bootstrap/css/checks.css" %}
+
+        
+        
+    </style>
+	
+</head>
+
+<body>
+	<div class="header">
+		<div>
+			<a href="/loggedin/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search_do/">
+			<input type="text" class= "form-control" placeholder="Search Our Recipes" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li>
+						<a href="/loggedin/">Home</a>
+					</li>
+					<li>
+						<a href="/share_recipes_loggedin/">Share Your Recipes</a>
+					</li>
+					<li>
+						<a href="/manage/">Manage Account</a>
+					</li>
+					
+					<li class="current">
+						<a href="/profile/">Profile</a>
+					</li> 
+					
+					<li>
+						<a href="/logout_do/">Log Out</a>
+					</li>	
+				</ul>
+			</div>
+			
+			
+    <div class="body">
+			<div id="content">
+			
+			<div class="col-lg-6 col-lg-offset-3">
+				<div class="jumbotron2 extra" align = "center">
+					<div class="row marketing">
+						<h3 style="font-family:arial;font-size:25px;" class="text-center" >Profile</h3>
+                        <div id="inner" class="user-image">
+                            <img src={{author.image}} alt="{{author.user.username}}'s Photo" title="{{author.user.username}}'s Photo"  height="150" width="150">
+                        </div>
+		      <div class="user-info-block">
+                            <div class="user-heading">
+                            <TABLE>
+                                <TR>
+                                    <TD><b><font color="black">Username</font></b></TD>
+                                    <TD>&nbsp:&nbsp</TD>
+                                    <TD>&nbsp{{author.user.username}}</TD>
+                                </TR>
+                                
+                                <TR>
+                                    <TD><b><font color="black">Email</font></b></TD>
+                                    <TD>&nbsp:&nbsp</TD>
+                                    <TD>&nbsp{{author.user.email}}</TD>
+                                </TR>
+		</div></div>
+
+</div>
+
+</div>
+</div>
+	</body>
+</html> 

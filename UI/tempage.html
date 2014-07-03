@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reset Your Password</title>
+
+<style>
+{% include "bootstrap/css/bootstrap.css" %}
+{% include "bootstrap/css/bootstrap.min.css" %}
+{% include "bootstrap/css/bootstrap-theme.css" %}
+{% include "bootstrap/css/style.css" %}
+</style>
+
+</head>
+<body>
+<div class="header">
+		<div>
+			<a href="loggedin.html"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="search.html">
+			<input type="text" placeholder="Search Our Recipes" id="search">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+        
+<center>
+<br>
+<br>  
+      <br>
+
+  
+     <div class="row">
+         <div class="col-md-4 well well-sm">
+            <legend>Forgot Password</legend>
+            <form action="/login_do/" method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-md-12">
+                    <input maxlength=50 class="form-control" name="username" placeholder="User Name" type="text"
+                        required autofocus />
+                </div>
+            </div>
+<br>
+                <div class="row">
+                <div class="col-md-12">
+                    <input maxlength=50 class="form-control" name="email" placeholder="Email ID" type="text" required>
+                </div>
+                
+                <div class="col-md-6">
+  <label class="control-label" for="singlebutton"></label>
+  <div class="controls">
+    <button id="singlebutton" name="singlebutton" class="btn btn-success btn-block btn-lg">Email Me</button>
+  </div>
+</div>
+       
+</form>
+</div>
+</div>
+</div>
+
+</center>
+
+
+</div>
+</div>
+{% include "footer.html" %}
+</body>
+</html>

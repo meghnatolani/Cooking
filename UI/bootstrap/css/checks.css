@@ -1,0 +1,66 @@
+
+
+
+.valid {
+    text-align: left;
+    padding: 5px;
+    font-size: 11px;
+    color: #222334;
+    position: absolute;
+    display: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 1px 2px #a9a9a9;
+    -moz-box-shadow: -1px 1px 2px #a9a9a9;
+    box-shadow: -1px 1px 2px #a9a9a9;
+}
+
+.error {
+    background: #f60000;
+    border: 3px solid #d50000;
+}
+
+.correct {
+    background: #5cb85c;
+    border: 3px solid #5cb85c;
+}
+
+.medium {
+    color: #000;
+    background: #ffa500;
+    border: 3px solid #ff8c00;
+}
+
+.weak {
+    color: #000;
+    background: #ffd700;
+    border: 3px solid #e6c200;
+}
+
+.wrong {
+    font-weight: bold;
+    color: #e90000;
+}
+
+.normal {
+    font-weight: normal;
+    color: #222;
+}
+
+.loginwrong {
+    color: #000;
+    font-weight: bold;
+    background-color: #d58582;
+    border: 6px transparent #e53332;
+}
+
+.loginokay {
+    color: #555;
+    font-weight: normal;
+    background-color: #fff;
+}
+
+.editchange {
+    background: #5cb85c;
+}

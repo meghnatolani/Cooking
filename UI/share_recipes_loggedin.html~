@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Share Your Recipes</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	
+	 <style>
+        {% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/loggedin/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" class= "form-control" placeholder="Search Our Recipes" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li>
+						<a href="/loggedin/">Home</a>
+					</li>
+					<li class="current">
+						<a href="/share_recipes_loggedin/">Share Your Recipes</a>
+					</li>
+					<li>
+						<a href="/manage/">Manage Account</a>
+					</li>
+					
+					<li>
+						<a href="/profile/">Profile</a>
+					</li> 
+					
+					<li>
+						<a href="/index/">Log Out</a>
+					</li>	
+				</ul>
+			</div>
+			<div class="body">
+			
+			<div id="content">
+		<form class="navbar-form navbar-left" action= "/share/" id="share">
+		<div style="padding-top:30px" class="panel-body" >  
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="recipe_name">Recipe Name</label>
+  <div class="controls">
+    <input id="name" name="name" type="text" placeholder="" class="input-xlarge" required="">
+    
+  </div>
+<br>
+
+<!-- Textarea -->
+
+  <label class="control-label" for="short_des">Short Description</label>
+  <div class="controls">                     
+    <textarea id="short_des" name="short_des"></textarea>
+  </div>
+<br>
+
+<!-- Appended Input-->
+
+<!--  <label class="control-label" for="food_image">Image</label>
+  <div class="controls">
+    <div class="input-append">
+      <input id="food_image" name="food_image" placeholder="" type="text">
+      <span class="add-on">Browse</span>
+    </div>
+    
+  </div>-->
+
+<br>
+<!-- Textarea -->
+
+  <label class="control-label" for="ingredients">Ingredients</label>
+  <div class="controls">                     
+    <textarea id="ingredients" name="ingredients"></textarea>
+  </div>
+<br>
+<!-- Text input-->
+
+  <label class="control-label" for="calories">Calories</label>
+  <div class="controls">
+    <input id="calories" name="calories" type="text" placeholder="(Optional)" class="input-xlarge">
+    
+  </div>
+
+<br>
+<!-- Text input-->
+
+  <label class="control-label" for="cost">Approx. Cost</label>
+  <div class="controls">
+    <input id="cost" name="cost" type="text" placeholder="(Optional)" class="input-xlarge">
+    
+  </div>
+<br>
+
+<!-- Textarea -->
+
+  <label class="control-label" for="steps">Steps</label>
+  <div class="controls">                     
+    <textarea id="steps" name="steps"></textarea>
+  </div>
+
+<br>
+<!-- Multiple Radios (inline) -->
+
+  <label class="control-label" for="radios">Food Type</label>
+  <div class="controls">
+    <label class="radio inline" for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="Breakfast" checked="checked">
+      Breakfast
+    </label>
+    <label class="radio inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="Starter">
+      Starter
+    </label>
+    <label class="radio inline" for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="Lunch">
+      Lunch
+    </label>
+    <label class="radio inline" for="radios-3">
+      <input type="radio" name="radios" id="radios-3" value="Dinner">
+      Dinner
+    </label>
+    <label class="radio inline" for="radios-4">
+      <input type="radio" name="radios" id="radios-4" value="Desert">
+      Desert
+    </label>
+  </div>
+<br>
+<!-- Button -->
+  <label class="control-label" for="share"></label>
+  <div class="controls">
+    <button id="/share/" name="/share/" class="btn btn-primary">Share</button>
+  </div>
+</div>
+<br>
+</form>
+	</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<p>
+				&copy; Copyright 2014. All rights reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Top Rated Recipes</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	
+	<style>
+	{% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+	</style>
+	
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/index/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" placeholder="Search Our Recipes" id="search">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li>
+						<a href="/index/">Home</a>
+					</li>
+					<li class="current">
+						<a href="/featured/">Top Rated Recipes</a>
+					</li>
+					<li>
+						<a href="/share_recipes/">Share Your Recipes</a>
+					</li>
+					<li>
+						<a href="/contactus/">Contact Us</a>
+					</li>
+					
+					<li>
+						<a href="/logindo/">Log In</a>
+					</li>		
+				</ul>
+			</div>
+			<div class="body">
+				<div id="content">
+					<div>
+						<div>
+							<h3>Ham Sandwich</h3><br>
+							<p>
+							Making irresistible, original recipe foods with Aloha Spirit since 1950.Here is the famous Ham Sandwich.
+							</p>
+							<a href="/index/"><img src="http://www.andypost.com/data/photos/492_1r13_andy_post_food_photography_sandwich.jpg" alt="Image" style= "width : 500px"></a>
+							<h5>INGREDIENTS</h5>
+
+							<ol class="ingredients">
+<li>
+1 12-pack Sweet Dinner Rolls
+</li>
+<li>
+1 1/2 teaspoons Worcestershire sauce
+</li>
+<li>
+1 1/2 sticks Butter
+</li>
+<li>
+Capsicum /Bell pepper - 1 cup 
+</li>
+<li>
+Salt and pepper powder to taste
+</li>
+<li>
+Oregano powder
+</li>
+							</ol>
+							<h5>DIRECTIONS</h5>
+							<ol class="directions">
+							<li>
+Melt butter and mix in mustard, sauce and onion.
+</li>
+<li>
+Cut the entire pack of rolls in half, horizontally (keeping all top and bottom halves separately in tact).
+</li>
+<li>
+Add broccoli, capsicum and cook for a few minutes in high flame.Keep stirring it continuously. Do not over cook.The vegetables should be crisp.
+</li>
+<li>
+Then sprinkle a little oregano, add salt and pepper powder to taste.
+</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h3>Other Top Rated</h3>
+				<ul id="featured">
+					<li>
+						<a href="/featured/"><img src="http://3.bp.blogspot.com/-o38WX8trw58/T9CbPlFcguI/AAAAAAAAEuY/KIa-Fy6nKxA/s1600/bowtie+pasta+recipe.jpg" alt="Image" style="width:80px"></a>
+						<div>
+							<h2><a href="/featured/">Vegetable Pasta</a></h2>
+							<span>by: Anna</span>
+						</div>
+					</li>
+					<li>
+						<a href="/biscuit_cake/"><img src="http://4.bp.blogspot.com/-6BFoxFB4nqw/TvSG9mY4oeI/AAAAAAAADsI/qoFvZqgep0A/s1600/IMG_3089.JPG" alt="Image" style="width:80px"></a>
+						<div>
+							<h2><a href="/biscuit_cake/">Biscuit &amp; Cake</a></h2>
+							<span>by: Sarah</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<p>
+				&copy; Copyright 2012. All rights reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>

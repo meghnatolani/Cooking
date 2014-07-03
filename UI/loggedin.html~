@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Knorre, Eat Healthy!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	
+	 <style>
+        {% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+        
+    </style>
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/loggedin/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" class= "form-control" placeholder="Search Our Recipes" id="name" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class = "row">
+	  
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li class="current">
+						<a href="/loggedin/">Home</a>
+					</li>
+					<li>
+						<a href="/share_recipes_loggedin/">Share Your Recipes</a>
+					</li>
+					<li>
+						<a href="/manage/">Manage Account</a>
+					</li>
+					
+					<li>
+						<a href="/profile/">Profile</a>
+					</li> 
+					
+					<li>
+						<a href="/logout_do/">Log Out</a>
+					</li>	
+				</ul>
+			</div>
+			
+			<div class="body">
+					<a href="/loggedin/"><img src="http://i.imgur.com/SWOVbpG.jpg" alt="Image" ></a>
+				<br><br>
+				
+				
+	
+      <!--left-->
+     
+      <!--right-->
+      
+        <h2>About Knorre</h2>
+        <hr>
+        <p>
+          At Knorre, we allow people to share their recipes as well as allow them to search for recipes.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
+          Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
+          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+          sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!</p>
+        </div>
+	<div class="footer">
+		<div>
+			<p>
+				@Knorre Copyright 2014.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

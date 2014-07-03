@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Search Your Recipes</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	<style>
+	
+	{% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+	
+	div.blocktext {
+    margin-left: 70px;
+    }
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/index/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" class= "form-control" placeholder="Search Our Recipes" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<br><br>
+
+
+<div class="blocktext">
+        {% if temp==1 %}
+		<h1>Search Results</h1><br>
+		<h3 class="lead"><strong class="text-danger"></strong> Results were found for the search for <strong class="text-danger"><u>{{result.name}}</strong></u></h3>								
+		{% else %}
+		<h1>Search Results</h1><br>
+        <h3 class="lead"><strong class="text-danger">2</strong> No Results found</h3>                              
+        {% endif %}
+</div>
+<br><br>
+<div class= "blocktext">
+    
+		<article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<a href="biscuit_cake.html"><img src="http://4.bp.blogspot.com/-6BFoxFB4nqw/TvSG9mY4oeI/AAAAAAAADsI/qoFvZqgep0A/s1600/IMG_3089.jpg" alt="biscuit cake " style="width:300px"/></a>
+			</div>
+			
+			
+			<div class="col-xs-6 col-sm-6 col-md-6 excerpet">
+				<h3><a href="biscuit_cake.html" title="">Biscuit Cake</a></h3>
+				<p>Making irresistible, original recipe foods with Aloha Spirit since 1950.Here is the famous Biscuit Cake.</p>	
+			</div>			
+                </div>
+           
+		</article>
+</div>
+<br><br><br><br>
+	<div class="blocktext">	
+	 <article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<a href="#"><img src="http://4.bp.blogspot.com/-RiVI6Yxv9Tc/TbiZCr8I8HI/AAAAAAAAEPY/aV93hfr5npg/s1600/biscuit_cake_cutB.jpg" style="width:300px"/></a>
+			</div>
+		
+			
+			<div class="col-xs-6 col-sm-6 col-md-6 excerpet">
+				<h3><a href="#" title="">Biscuit Cake</a></h3>
+				<p>Delicious Biscuit cake in minutes.</p>				</div>		
+		</article>
+		</section>
+		<div>
+
+<div class="footer">
+		<div>
+			<p>
+				&copy; Copyright 2014. All rights reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>

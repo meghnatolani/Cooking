@@ -1,0 +1,113 @@
+
+<!-- This page occurs when an a user verifies his account after clicking on the link sent to his Email. 
+It is basically a LOGIN PAGE-->
+
+<html>
+  <head>
+  <meta charset="utf-8">
+   <title>Login</title>
+ 
+    <!-- CSS dependencies -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+  <style>
+
+  {% include "bootstrap/css/bootstrap.min.css" %}
+  {% include "bootstrap/css/bootstrap.css" %}
+  </style>
+  </head>
+
+
+<body>
+  <script>
+
+  function onClick(){
+    bootbox.confirm("<br>Are you sure to cancel?", function(result) {
+      if (result === false) {
+	document.getElementById("hr").innerHTML = "You pressed Cancel"
+    } else {
+	document.getElementById("hr").innerHTML = "Pressed O.K";
+      }
+    })
+  };
+
+  </script>
+  
+  
+  <div class="jumbotron2" style="width:80%; height:30%">
+  <div class="container">      
+  <center>
+	<br><br>					
+    <div class="container"> 			<!--A container is made with spacing 4 -->
+    <br>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-6 well well-sm">
+            <p> Please Log in to continue </p>			
+            <legend style="color:blue"><i class="glyphicon glyphicon-arrow-right"></i> LOGIN</legend>
+            
+	    <form action="/login_do/?redirect={{redirect}}" method="post" class="form" role="form">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <input maxlength=50 class="form-control" name="username" id="loginusername" placeholder="username" type="text"
+                        required autofocus />
+                </div>
+	    </div>
+              
+              <br>
+              
+                <div class="row">
+                <div class="col-md-12"> <!--Makes the username box long-->
+                    <input maxlength=100 class="form-control" name="password" id="loginpassword" placeholder="password" type="password" required>
+                </div>
+		 
+		 <div>
+                    <label class="checkbox"><input maxlength=100 name = "code" type="checkbox" value="{{ code }}" checked style="opacity:0; position:absolute; left:9999px;"></label>
+                </div>
+                
+                <div class="col-md-6 col-md-offset-3">
+		  <label class="control-label" for="singlebutton"></label>
+		  <div class="controls">
+		  <button id="login" name="singlebutton" class="btn btn-success btn-block btn-lg">Login</button>
+		  </div>
+		</div>
+       
+	</form>
+    </div>
+  </div>
+</div>						    										
+    	<div id = "hr"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- JS dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script> {% include "bootstrap/js/bootstrap.min.js" %}</script> 
+<!-- bootbox code -->
+<script src="bootstrap/js/bootbox.js"></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+       
+
+<script>
+{% include "bootstrap/js/jquery.min1.js" %}
+{% include "bootstrap/js/login_check.js" %}
+</script>
+</body>
+</html>

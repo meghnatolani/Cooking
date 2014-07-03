@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Top Rated Recipes</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	
+	 <style>
+        {% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+        
+        
+    </style>
+    
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="/index/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" class= "form-control" placeholder="Search Our Recipes" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul><li>
+						<a href="/index/">Home</a>
+					</li>
+					<li class="current">
+						<a href="/featured/">Top Rated Recipes</a>
+					</li>
+					<li>
+						<a href="/share_recipes/">Share Your Recipes</a>
+					</li>
+					<li>
+						<a href="/contactus/">Contact Us</a>
+					</li>
+					
+					<li>
+						<a href="/logindo/">Log In</a>
+					</li>	
+				</ul>
+			</div>
+			<div class="body">
+				<div id="content">
+					<div>
+						<div>
+							<h3>Vegetarian Pasta</h3><br>
+							<p>
+							Farfalle are a type of pasta. They are commonly known as "bow-tie pasta".The name is derived from the Italian word farfalla  which means "butterfly".Today we will learn how to make a very easy Vegetarian Pasta recipe.
+							</p>
+							<a href="/index/"><img src="http://3.bp.blogspot.com/-o38WX8trw58/T9CbPlFcguI/AAAAAAAAEuY/KIa-Fy6nKxA/s1600/bowtie+pasta+recipe.jpg" alt="Image"></a>
+							<h5>INGREDIENTS</h5>
+
+							<ol class="ingredients">
+							<li>
+							Onion -1
+							</li>
+							<li>
+							Garlic - 1 tbsp
+							</li>
+							<li>
+							Broccoli - 10-12 bite size florets
+							</li>
+							<li>
+							Capsicum /Bell pepper - 1 cup 
+							</li>
+							<li>			
+							Salt and pepper powder to taste
+							</li>
+							  <li>
+						      Oregano powder
+							</li>
+							</ol>
+
+<h5>Steps</h5>
+    <ol class="steps">
+    <li>
+    Put broccoli  in boiling water for 3-4 minutes.Drain the water and keep it aside.
+    </li>
+    <li>
+    Heat olive oil, add finely chopped onion and garlic and saute till onions become light pink.
+  </li>
+  <li>
+  Add broccoli, capsicum and cook for a few minutes in high flame.Keep stirring it continuously. Do not over cook.The vegetables should be crisp.
+  </li>
+  <li>
+  Then sprinkle a little oregano, add salt and pepper powder to taste.
+  </li>
+  </ol>
+  </div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<div>
+			<div>
+			
+			<h3>Other Top Rated</h3>
+			    <ul id="featured">
+					<li>
+						<a href="/sandwich/"><img src="http://www.andypost.com/data/photos/492_1r13_andy_post_food_photography_sandwich.jpg" alt="Image" style= "width : 80px"></a>
+						<div>
+							<h2><a href="/sandwich/">Ham Sandwich</a></h2>
+							<span>by: Anna</span>
+						</div>
+					</li>
+					<li>
+						<a href="/biscuit_cake/"><img src="http://4.bp.blogspot.com/-6BFoxFB4nqw/TvSG9mY4oeI/AAAAAAAADsI/qoFvZqgep0A/s1600/IMG_3089.JPG" alt="Image" style="width:80px"></a>
+						<div>
+							<h2><a href="/biscuit_cake/">Biscuit &amp; Cake</a></h2>
+							<span>by: Sarah</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<p>
+				&copy; Copyright 2014. All rights reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>

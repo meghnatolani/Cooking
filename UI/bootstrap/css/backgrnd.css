@@ -1,0 +1,44 @@
+/*THIS IS FOR THE BACKGROUND IMAGE*/
+/*Not originally part of bootstrap files. Made by Tanmay.*/
+
+.jumbotron2 {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+}
+.jumbotron2 h1,
+.jumbotron2 .h1 {
+  color: inherit;
+}
+.jumbotron2 p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.container .jumbotron2 {
+  border-radius: 6px;
+}
+.jumbotron2 .container {
+  max-width: 100%;
+}
+
+body 
+{
+background-image:url("http://www.brewsterwallcovering.com/data/default/images/catalog/original/420-87111.jpg");
+background-color:#eee;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron2 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron2 {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron2 h1,
+  .jumbotron2 .h1 {
+    font-size: 63px;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Knorre, Eat Healthy!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+	
+	<style>
+
+        {% include "bootstrap/css/bootstrap.min.css" %}
+        {% include "bootstrap/css/style.css" %}
+       
+  
+  </style>
+</head>
+
+<body>
+	<div class="header">
+		<div>
+			<a href="/loggedin/"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="/search/">
+			<input type="text" name="name" class= "form-control" placeholder="Search Our Recipes" id="search" style="border: 2px solid;">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li>
+						<a href="/loggedin/">Home</a>
+					</li>
+					<li>
+						<a href="/share_recipes_loggedin/">Share Your Recipes</a>
+					</li>
+					<li class="current">
+						<a href="/manage/">Manage Account</a>
+					</li>
+					
+					<li>
+						<a href="/profile/">Profile</a>
+					</li> 
+					
+					<li>
+						<a href="/logout_do/">Log Out</a>
+					</li>	
+				</ul>
+			</div>
+		
+			
+<div class="body">
+<div id="content">
+<div class="panel-body" > 
+		  <center>
+		  <h3><u>RESET YOUR PASSWORD</u></h3>
+		  <br>
+			<form class="navbar-form navbar-center" action= "/change_pass/">
+	
+			<label class="control-label" for="old_password" >OLD PASSWORD</label>              
+				<input type="password" name="oldpass" id="oldpassword" class="form-control"></textarea>
+			  <br><br>
+<!-- Text input-->
+
+			  <label for="new_password">NEW PASSWORD</label>
+			    
+				<input id = "passwd"  name = "pass" type="password"  class="form-control"><center><br>	
+			    
+				    <button type="submit" class="btn btn-info">Reset Password</button>
+				      </center><br>
+			    	
+			   </form>
+			   
+			      
+</div>
+
+
+<div class="body">
+			<div id="content">
+			      <center><h3><u>YOUR SHARED RECIPES</u></h3></center>
+			      <br>
+			      {% for i in range(0,length) %}
+			      <h4>{{i+1}} : <u>{{result[i].name}}</u></h4>
+			      <button type="submit" class="btn btn-danger" style="float:right">DELETE</button>
+			      <h4>Short Description : {{result[i].short_des}}</h4>
+			      <button type="submit" class="btn btn-danger" style="float:right">&nbsp;EDIT&nbsp;</button>
+			      <h4>Ingredients : {{result[i].ingredients}}</h4>
+			      <h4>Steps : {{result[i].steps}}</h4>
+			      <h4>Calories : {{result[i].calories}}</h4>
+			      <h4>Cost : {{result[i].cost}}</h4>
+			      <h4>Accepted or Not(If 0 means no, else yes) : {{result[i].status}}</a></h4>
+			      {% endfor %}
+			      </div>
+			      </div>
+
+	  <div class="footer">
+			<p>
+				@Knorre Copyright 2014.
+			</p>
+	  </div>
+	  </div>
+	  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script> {% include "bootstrap/js/bootstrap.min.js" %} </script>
+
+	  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Your Profile</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--	<link rel="shortcut icon" href="../../assets/ico/download.ico">-->
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="loggedin.html"><img src="http://i.imgur.com/KgrfN3Y.png" alt="Logo"></a>
+		</div>
+		<form action="search.html">
+			<input type="text" placeholder="Search Our Recipes" id="search">
+			<input type="submit" value="" id="searchbtn">
+		</form>
+	</div>
+	<div class="body">
+		<div>
+			<div class="header">
+				<ul>
+					<li>
+						<a href="loggedin.html">Home</a>
+					</li>
+					<li>
+						<a href="share_recipes_loggedin.html">Share Your Recipes</a>
+					</li>
+					<li class="current">
+						<a href="manage.html">Manage Account</a>
+					</li>
+					
+					<li>
+						<a href="profile.html">Profile</a>
+					</li> 
+					
+					<li>
+						<a href="index.html">Log Out</a>
+					</li>	
+				</ul>
+			</div>
+			<div class="body">
+			
+			<div id="content">
+			
+			<div class="col-lg-6 col-lg-offset-3">
+				<div class="jumbotron2 extra" align = "center">
+					<div class="row marketing">
+						<h3 style="font-family:arial;font-size:25px;" class="text-center" >{{recipe.name}}</h3>
+						 <!--<u>Short Description </u> <p> {{recipeobj.short_des}}</p>
+                       
+					      <img src="{{Recipe.image}}" alt="{{recipeobj.name}}'s Photo" height="150" width="150">
+					      <u>Steps : </u> <p>{{recipeobj.steps}}</p>
+					      <u>Calories </u> <p>{{recipeobj.calories}}</p>
+					       <u>Cost : </u> <p>{{recipeobj.cost}}</p>
+					       <u>Status</u> <p>{{recipeobj.status}}</p>
+					       -->
+					       
+                    <br> <br>
+		<button type="button" class="btn btn-info">Delete</button>
+	
+			  
+		  </div>
+		  </div>
+		  </div>
+	</div>
+</div>
+</body>
+</html> 
