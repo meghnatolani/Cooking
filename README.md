@@ -1,17 +1,14 @@
-Cooking
+Online Recipe Website
 =======
 
-This is a Online Recipe website, done in Django/Jinja. 
-It hasn't been hosted yet. To view :
-1. Download Python
-2. Download Django
-3. Download the folder
-4. Change the cps path in paths.py to the path where your folder is.
-5. Run on localhost.
+A basic recipe search website, where a user could signup/login, search for a recipe and post recipe.
+The recipe's will be visible to other users once accepted by the admin.
 
-Features Include :
-1. SIGN UP/LOGIN
-2. SEARCH FOR A RECIPE
-3. SHARE YOUR RECIPE - Will be viewed only if accepted by ADMIN.
+Steps involed :																										
+	1. Clone the project.																	
+	2. Download Python - Django.														
+	3. Change the cps path in paths.py to the path where your folder is.									
+	4. Run it using web server.
+
 
 
